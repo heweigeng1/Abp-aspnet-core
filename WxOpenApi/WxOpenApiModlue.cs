@@ -1,9 +1,16 @@
-﻿using Abp.Modules;
+﻿using Abp.AspNetCore.Configuration;
+using Abp.AutoMapper;
+using Abp.Modules;
+using Abp.Reflection.Extensions;
 using Shundao;
+using Shundao.Authorization;
+using System.Reflection;
 
 namespace WxOpenApi
 {
-    [DependsOn(typeof(ShundaoWebCoreModule))]
+    [DependsOn(
+        typeof(ShundaoCoreModule),
+        typeof(AbpAutoMapperModule))]
     public class WxOpenApiModlue : AbpModule
     {
         /// <summary>
@@ -11,6 +18,8 @@ namespace WxOpenApi
         /// </summary>
         public override void PreInitialize()
         {
+            //Configuration.Authorization.Providers.Add<ShundaoAuthorizationProvider>();
+            Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(WxOpenApiModlue).Assembly, moduleName:"app", useConventionalHttpVerbs: true);
             base.PreInitialize();
         }
 
@@ -21,6 +30,9 @@ namespace WxOpenApi
         {
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
+            var thisAssembly = typeof(WxOpenApiModlue).GetAssembly();
+
+            IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
 
         /// <summary>

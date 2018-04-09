@@ -6,7 +6,7 @@ using System.Text;
 
 namespace WxOpenApi.AppPay
 {
-    public interface IAppPayService: IApplicationService
+    public interface IMobliePayAppService: IApplicationService
     {
         [HttpPost]
         void Paying();

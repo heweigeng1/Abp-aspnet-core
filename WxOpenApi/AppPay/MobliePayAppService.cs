@@ -1,14 +1,15 @@
-﻿using System;
+﻿using Abp.Application.Services;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace WxOpenApi.AppPay
 {
-    public class AppPayService : IAppPayService
+    public class MobliePayAppService : ApplicationService, IMobliePayAppService
     {
         public void Nodify()
         {
-            
+
         }
 
         public void Paying()
