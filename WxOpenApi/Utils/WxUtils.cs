@@ -56,7 +56,7 @@ namespace WxOpenApi.Utils
                 }
                 else
                 {
-                    throw new KnownException("xml里不能包含int 类型与string 类型以外的类型");
+                    throw new Exception("xml里不能包含int 类型与string 类型以外的类型");
                 }
             }
             return $@"<xml>{sb.ToString()}</xml>";

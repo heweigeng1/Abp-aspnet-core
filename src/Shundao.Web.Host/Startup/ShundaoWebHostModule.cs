@@ -3,11 +3,12 @@ using Microsoft.Extensions.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Shundao.Configuration;
+using WxOpenApi;
 
 namespace Shundao.Web.Host.Startup
 {
     [DependsOn(
-       typeof(ShundaoWebCoreModule))]
+       typeof(ShundaoWebCoreModule),typeof(WxOpenApiModlue))]
     public class ShundaoWebHostModule: AbpModule
     {
         private readonly IHostingEnvironment _env;

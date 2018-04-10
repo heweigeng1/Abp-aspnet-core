@@ -25,6 +25,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\WxOpenApi\WxOpenApi.csproj" />
     <ProjectReference Include="..\Shundao.Web.Core\Shundao.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>
