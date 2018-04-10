@@ -9,7 +9,7 @@ using WxOpenApi.Utils;
 
 namespace WxOpenApi.AppPay
 {
-    public class AppPayService :ApplicationService, IAppPayService
+    public class MobliePayAppService : ApplicationService, IMobliePayAppService
     {
         private object Request;
 
