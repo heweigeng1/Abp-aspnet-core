@@ -1,5 +1,6 @@
 ﻿using Abp.Modules;
 using Shundao;
+using System.Reflection;
 
 namespace WxOpenApi
 {
