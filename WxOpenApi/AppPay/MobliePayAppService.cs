@@ -6,19 +6,28 @@ using System.Text;
 using WxOpenApi.AppPay.Dtos;
 using WxOpenApi.Config;
 using WxOpenApi.Utils;
+using Microsoft.AspNetCore.Mvc;
+using System.Net.Http;
+using Microsoft.AspNetCore.Http;
+using System.Threading.Tasks;
+using Abp.Web.Models;
 
 namespace WxOpenApi.AppPay
 {
     public class MobliePayAppService : ApplicationService, IMobliePayAppService
     {
-        private object Request;
+        IHttpContextAccessor contextAccessor;
+        public MobliePayAppService(IHttpContextAccessor _contextAccessor)
+        {
+            contextAccessor = _contextAccessor;
+        }
 
-        public void Nodify()
+        [DontWrapResult]
+        public void  Nodify()
         {
             using (MemoryStream ms = new MemoryStream())
             {
-                
-                //Request.Body.CopyTo(ms);
+                contextAccessor.HttpContext.Request.Body.CopyTo(ms);
                 byte[] bytes = ms.ToArray();
                 string requestxml = Encoding.UTF8.GetString(bytes);
                 string return_string = string.Empty;
@@ -36,9 +45,10 @@ namespace WxOpenApi.AppPay
                     map.Add("return_msg", "统一下单失败");
                 }
                 string xml = map.SortedDictionaryToWxXml();
-                //Response.Body.Write(xml);
-                //Response.Body.EndWrite();
-                
+                Stream stream = ms;
+                var respbyte = Encoding.UTF8.GetBytes(xml);
+                //contextAccessor.HttpContext.Response.Body.EndWrite(stream.WriteAsync(respbyte, 0, respbyte.Length));
+                contextAccessor.HttpContext.Response.Body.Write(respbyte, 0, respbyte.Length);
             }
 
         }
