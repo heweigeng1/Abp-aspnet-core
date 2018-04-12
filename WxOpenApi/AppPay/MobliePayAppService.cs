@@ -6,10 +6,7 @@ using System.Text;
 using WxOpenApi.AppPay.Dtos;
 using WxOpenApi.Config;
 using WxOpenApi.Utils;
-using Microsoft.AspNetCore.Mvc;
-using System.Net.Http;
 using Microsoft.AspNetCore.Http;
-using System.Threading.Tasks;
 using Abp.Web.Models;
 
 namespace WxOpenApi.AppPay
@@ -32,8 +29,8 @@ namespace WxOpenApi.AppPay
                 string requestxml = Encoding.UTF8.GetString(bytes);
                 string return_string = string.Empty;
                 SortedDictionary<string, string> map = new SortedDictionary<string, string>();
-                object obj = WxUtils.XmlDeserialize(typeof(AppPayUnifiedOrderCallbackDto), requestxml);
-                if (obj is AppPayUnifiedOrderCallbackDto && ((AppPayUnifiedOrderCallbackDto)obj).result_code == "SUCCESS")
+                object obj = WxUtils.XmlDeserialize(typeof(MobilePayCallbackDto), requestxml);
+                if (obj is MobilePayCallbackDto && ((MobilePayCallbackDto)obj).result_code == "SUCCESS")
                 {
                     //成功则在此对订单执行操作
                     map.Add("return_code", "SUCCESS");
@@ -45,9 +42,7 @@ namespace WxOpenApi.AppPay
                     map.Add("return_msg", "统一下单失败");
                 }
                 string xml = map.SortedDictionaryToWxXml();
-                Stream stream = ms;
                 var respbyte = Encoding.UTF8.GetBytes(xml);
-                //contextAccessor.HttpContext.Response.Body.EndWrite(stream.WriteAsync(respbyte, 0, respbyte.Length));
                 contextAccessor.HttpContext.Response.Body.Write(respbyte, 0, respbyte.Length);
             }
 
@@ -79,7 +74,7 @@ namespace WxOpenApi.AppPay
             #region 请求微信统一下单接口 获取预支付订单号
             string xml = untifiedOrder.SortedDictionaryToWxXml().Replace("</xml>", $@"<sign><![CDATA[{ sign }]]></sign></xml>");
             string callbackXml = WxUtils.PostToUnifiedOrder(xml);//请求微信统一下单接口
-            AppPayUnifiedOrderCallbackDto callbackobj = (AppPayUnifiedOrderCallbackDto)WxUtils.XmlDeserialize(typeof(AppPayUnifiedOrderCallbackDto), callbackXml);
+            MobilePayCallbackDto callbackobj = (MobilePayCallbackDto)WxUtils.XmlDeserialize(typeof(MobilePayCallbackDto), callbackXml);
             #endregion
             #region 用户端sign
             PayingOutput output = new PayingOutput

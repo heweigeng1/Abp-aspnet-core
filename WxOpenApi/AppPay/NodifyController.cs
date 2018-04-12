@@ -12,14 +12,9 @@ namespace WxOpenApi.AppPay
 {
     public class NodifyController:AbpController
     {
-        [DontWrapResult]
-        public void Test2()
-        {
-            var respbyte = Encoding.UTF8.GetBytes("<xml>abccccc</xml>");
-            //contextAccessor.HttpContext.Response.Body.EndWrite(stream.WriteAsync(respbyte, 0, respbyte.Length));
-            Response.Body.Write(respbyte, 0, respbyte.Length);
-        }
+      
         [HttpPost]
+        [DontWrapResult]
         public void MobliePay()
         {
             using (MemoryStream ms = new MemoryStream())
@@ -29,8 +24,8 @@ namespace WxOpenApi.AppPay
                 string requestxml = Encoding.UTF8.GetString(bytes);
                 string return_string = string.Empty;
                 SortedDictionary<string, string> map = new SortedDictionary<string, string>();
-                object obj = WxUtils.XmlDeserialize(typeof(AppPayUnifiedOrderCallbackDto), requestxml);
-                if (obj is AppPayUnifiedOrderCallbackDto && ((AppPayUnifiedOrderCallbackDto)obj).result_code == "SUCCESS")
+                object obj = WxUtils.XmlDeserialize(typeof(MobilePayCallbackDto), requestxml);
+                if (obj is MobilePayCallbackDto && ((MobilePayCallbackDto)obj).result_code == "SUCCESS")
                 {
                     //成功则在此对订单执行操作
                     map.Add("return_code", "SUCCESS");

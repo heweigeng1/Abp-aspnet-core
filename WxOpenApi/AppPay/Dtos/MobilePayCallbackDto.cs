@@ -4,7 +4,7 @@ using System.Text;
 
 namespace WxOpenApi.AppPay.Dtos
 {
-    public class AppPayUnifiedOrderCallbackDto
+    public class MobilePayCallbackDto
     {
         public string return_code { get; set; }
         public string return_msg { get; set; }
