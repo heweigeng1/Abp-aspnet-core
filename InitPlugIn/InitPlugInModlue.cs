@@ -1,12 +1,12 @@
 ﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
-using Shundao;
 using System.Reflection;
+using WxOpenApi;
 
 namespace InitPlugIn
 {
     [DependsOn(
-        typeof(ShundaoCoreModule))]
+        typeof(WxOpenApiModlue))]
     public class InitPlugInModlue : AbpModule
     {
         /// <summary>

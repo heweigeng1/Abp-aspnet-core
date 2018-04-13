@@ -2,14 +2,11 @@
 using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
-using Shundao;
-using Shundao.Authorization;
 using System.Reflection;
 
 namespace WxOpenApi
 {
     [DependsOn(
-        typeof(ShundaoCoreModule),
         typeof(AbpAutoMapperModule))]
     public class WxOpenApiModlue : AbpModule
     {
