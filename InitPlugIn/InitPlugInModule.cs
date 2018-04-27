@@ -1,14 +1,13 @@
-﻿using Abp.AspNetCore.Configuration;
-using Abp.AutoMapper;
-using Abp.Modules;
+﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
 using System.Reflection;
+using WxOpenApi;
 
-namespace WxOpenApi
+namespace InitPlugIn
 {
     [DependsOn(
-        typeof(AbpAutoMapperModule))]
-    public class WxOpenApiModlue : AbpModule
+        typeof(WxOpenApiModule))]
+    public class InitPlugInModule : AbpModule
     {
         /// <summary>
         /// 预初始化，通常是用来配置框架以及其它模块
@@ -16,7 +15,6 @@ namespace WxOpenApi
         public override void PreInitialize()
         {
             //Configuration.Authorization.Providers.Add<ShundaoAuthorizationProvider>();
-            Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(WxOpenApiModlue).Assembly, moduleName:"app", useConventionalHttpVerbs: true);
             base.PreInitialize();
         }
 
@@ -27,7 +25,7 @@ namespace WxOpenApi
         {
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            var thisAssembly = typeof(WxOpenApiModlue).GetAssembly();
+            var thisAssembly = typeof(InitPlugInModule).GetAssembly();
 
             IocManager.RegisterAssemblyByConvention(thisAssembly);
         }

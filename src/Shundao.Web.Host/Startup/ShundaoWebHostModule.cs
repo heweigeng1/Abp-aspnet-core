@@ -8,7 +8,7 @@ using WxOpenApi;
 namespace Shundao.Web.Host.Startup
 {
     [DependsOn(
-       typeof(ShundaoWebCoreModule),typeof(WxOpenApiModlue))]
+       typeof(ShundaoWebCoreModule),typeof(WxOpenApiModule))]
     public class ShundaoWebHostModule: AbpModule
     {
         private readonly IHostingEnvironment _env;

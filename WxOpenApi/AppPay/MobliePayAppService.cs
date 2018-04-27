@@ -20,7 +20,7 @@ namespace WxOpenApi.AppPay
         }
 
         [DontWrapResult]
-        public void  Nodify()
+        public void Nodify()
         {
             using (MemoryStream ms = new MemoryStream())
             {
@@ -55,12 +55,12 @@ namespace WxOpenApi.AppPay
             {
                 {"appid",WxConfig.AppId},
                 {"attach" , "wxpay" },
-                { "body", "订单支付"},
-                {" mch_id", WxConfig.MCH_ID },
+                {"body", "订单支付"},
+                {"mch_id", WxConfig.MCH_ID },
                 {"nonce_str", WxUtils.RandomStr(16)},
-                { "notify_url", WxConfig.AppPayNodifyUrl},
-                { "spbill_create_ip",""},//用户IP
-                { "total_fee", "0.01"},//金额
+                {"notify_url", WxConfig.AppPayNodifyUrl},
+                {"spbill_create_ip",""},//用户IP
+                {"total_fee", "0.01"},//金额
                 {"trade_type","APP" },
                 {"out_trade_no",DateTime.Now.ToString("yyyyMMddHHmmss")+WxUtils.RandomStr(2) }
             };
@@ -94,4 +94,4 @@ namespace WxOpenApi.AppPay
             return output;
         }
     }
-}                     
+}
