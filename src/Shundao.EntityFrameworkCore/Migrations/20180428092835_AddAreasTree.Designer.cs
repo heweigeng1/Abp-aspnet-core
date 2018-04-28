@@ -16,9 +16,10 @@ using System;
 namespace Shundao.Migrations
 {
     [DbContext(typeof(ShundaoDbContext))]
-    partial class ShundaoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20180428092835_AddAreasTree")]
+    partial class AddAreasTree
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
