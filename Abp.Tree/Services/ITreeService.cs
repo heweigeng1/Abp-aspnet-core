@@ -6,11 +6,9 @@ using System.Text;
 
 namespace AbpTree.Services
 {
-    interface ITreeService<TPrimaryKey>: IDomainService
+    public interface ITreeService 
     {
-        List<ITreeEntity<TPrimaryKey>> GetList();
-        ITreeEntity<TPrimaryKey> Get(TPrimaryKey id);
-        ITreeEntity<TPrimaryKey>  InitTree();
-
+        List<ITreeEntity> GetList();
+        ITreeEntity Get(Guid id);
     }
 }

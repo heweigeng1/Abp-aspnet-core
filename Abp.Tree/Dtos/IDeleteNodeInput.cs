@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AbpTree.Dtos
 {
-    interface IDeleteNodeInput<TPrimaryKey>:ITreeEntity<TPrimaryKey>
+    interface IDeleteNodeInput:ITreeEntity
     {
 
     }

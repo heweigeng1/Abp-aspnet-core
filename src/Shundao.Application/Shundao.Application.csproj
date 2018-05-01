@@ -17,4 +17,7 @@
     <ProjectReference Include="..\..\WxOpenApi\WxOpenApi.csproj" />
     <ProjectReference Include="..\Shundao.Core\Shundao.Core.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\Dto\" />
+  </ItemGroup>
 </Project>

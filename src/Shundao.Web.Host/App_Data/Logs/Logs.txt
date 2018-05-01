@@ -31409,3 +31409,763 @@ INFO  2018-03-30 16:18:27,384 [10   ] soft.AspNetCore.Hosting.Internal.WebHost -
 INFO  2018-03-30 16:18:27,398 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 5.5979ms 404 
 INFO  2018-03-30 16:18:27,430 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/favicon.ico  
 INFO  2018-03-30 16:18:27,443 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 21.1342ms 404 
+DEBUG 2018-04-30 13:49:26,088 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-30 13:49:26,119 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-04-30 13:49:26,154 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.Web.Host.Startup.ShundaoWebHostModule, Shundao.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoWebCoreModule, Shundao.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,156 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoApplicationModule, Shundao.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoCoreModule, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,157 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,158 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.EntityFrameworkCore.ShundaoEntityFrameworkModule, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,159 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,160 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WxOpenApi.WxOpenApiModule, WxOpenApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:26,164 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-04-30 13:49:26,229 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:49:26,229 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:49:26,229 [1    ] o.Configuration.LanguageManagementConfig - Converted Shundao (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:49:26,229 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:49:26,585 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Shundao.EntityFrameworkCore.ShundaoDbContext, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:49:27,034 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-30 13:49:27,094 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-30 13:49:27,134 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-30 13:49:27,152 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Shundao
+DEBUG 2018-04-30 13:49:27,178 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-30 13:49:27,208 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-30 13:49:27,249 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-30 13:49:27,249 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.CreateUserDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.UserDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.PermissionDto
+DEBUG 2018-04-30 13:49:27,254 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.RoleDto
+DEBUG 2018-04-30 13:49:27,255 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-30 13:49:27,255 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-30 13:59:29,696 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-30 13:59:29,720 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-04-30 13:59:29,753 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.Web.Host.Startup.ShundaoWebHostModule, Shundao.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,757 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoWebCoreModule, Shundao.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,757 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoApplicationModule, Shundao.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,757 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoCoreModule, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,758 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,759 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.EntityFrameworkCore.ShundaoEntityFrameworkModule, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,760 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,761 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WxOpenApi.WxOpenApiModule, WxOpenApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:29,765 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-04-30 13:59:29,850 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:59:29,850 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:59:29,850 [1    ] o.Configuration.LanguageManagementConfig - Converted Shundao (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:59:29,850 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 13:59:30,212 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Shundao.EntityFrameworkCore.ShundaoDbContext, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 13:59:30,656 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-30 13:59:30,712 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-30 13:59:30,751 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-30 13:59:30,770 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Shundao
+DEBUG 2018-04-30 13:59:30,798 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-30 13:59:30,828 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-30 13:59:30,868 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-30 13:59:30,868 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-30 13:59:30,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.CreateUserDto
+DEBUG 2018-04-30 13:59:30,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.UserDto
+DEBUG 2018-04-30 13:59:30,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-30 13:59:30,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-30 13:59:30,871 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-30 13:59:30,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.PermissionDto
+DEBUG 2018-04-30 13:59:30,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.RoleDto
+DEBUG 2018-04-30 13:59:30,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-30 13:59:30,872 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.TenantDto
+DEBUG 2018-04-30 21:47:21,787 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-30 21:47:21,854 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-04-30 21:47:21,893 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.Web.Host.Startup.ShundaoWebHostModule, Shundao.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,896 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoWebCoreModule, Shundao.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,896 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoApplicationModule, Shundao.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,896 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoCoreModule, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,897 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,897 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,897 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,898 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,899 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.EntityFrameworkCore.ShundaoEntityFrameworkModule, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,899 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,900 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,900 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,901 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,901 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,901 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,902 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WxOpenApi.WxOpenApiModule, WxOpenApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:21,906 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-04-30 21:47:22,006 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:47:22,006 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:47:22,006 [1    ] o.Configuration.LanguageManagementConfig - Converted Shundao (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:47:22,006 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:47:22,467 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Shundao.EntityFrameworkCore.ShundaoDbContext, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:47:23,415 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-30 21:47:23,488 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-30 21:47:23,529 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-30 21:47:23,547 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Shundao
+DEBUG 2018-04-30 21:47:23,574 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-30 21:47:23,742 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-30 21:47:23,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-30 21:47:23,783 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.CreateUserDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.UserDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.PermissionDto
+DEBUG 2018-04-30 21:47:23,786 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.RoleDto
+DEBUG 2018-04-30 21:47:23,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-30 21:47:23,787 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.TenantDto
+INFO  2018-04-30 21:47:26,620 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-30 21:47:30,111 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-30 21:47:30,253 [12   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-30 21:47:30,283 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) in 915.2538ms
+INFO  2018-04-30 21:47:30,318 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3742.9525ms 302 
+INFO  2018-04-30 21:47:30,353 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2018-04-30 21:47:30,385 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.9497ms 301 
+INFO  2018-04-30 21:47:30,412 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-30 21:47:30,449 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,483 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 70.4164ms 200 text/html
+INFO  2018-04-30 21:47:30,553 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-30 21:47:30,556 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-30 21:47:30,560 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-30 21:47:30,609 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/reset.css'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,612 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery-1.8.0.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,642 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-30 21:47:30,643 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 130.8218ms 200 text/css
+INFO  2018-04-30 21:47:30,699 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/print.css'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,700 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-30 21:47:30,726 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 214.9327ms 200 text/css
+INFO  2018-04-30 21:47:30,750 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/typography.css'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,776 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-30 21:47:30,801 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/css/screen.css'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,849 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-30 21:47:30,922 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/object-assign-pollyfill.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:30,924 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 270.3395ms 200 text/css
+INFO  2018-04-30 21:47:30,952 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 265.5543ms 200 text/css
+INFO  2018-04-30 21:47:30,953 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 416.4441ms 200 application/javascript
+INFO  2018-04-30 21:47:30,977 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-30 21:47:30,981 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-30 21:47:31,030 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.slideto.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,093 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 319.4266ms 200 application/javascript
+INFO  2018-04-30 21:47:31,094 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-30 21:47:31,145 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-30 21:47:31,149 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/lodash.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,174 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 385.7095ms 200 application/javascript
+INFO  2018-04-30 21:47:31,197 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/backbone-min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,224 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-30 21:47:31,225 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 214.3504ms 200 application/javascript
+INFO  2018-04-30 21:47:31,250 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.ba-bbq.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,297 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-30 21:47:31,346 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jquery.wiggle.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,347 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-30 21:47:31,376 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 497.4536ms 200 application/javascript
+INFO  2018-04-30 21:47:31,400 [15   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger-ui.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,403 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/handlebars-4.0.5.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,412 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 308.4096ms 200 application/javascript
+INFO  2018-04-30 21:47:31,482 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 221.5304ms 200 application/javascript
+INFO  2018-04-30 21:47:31,529 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-30 21:47:31,534 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack_extended.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,536 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-30 21:47:31,565 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 308.2236ms 200 application/javascript
+INFO  2018-04-30 21:47:31,614 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.863ms 200 application/javascript
+INFO  2018-04-30 21:47:31,687 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-30 21:47:31,693 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-30 21:47:31,718 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/jsoneditor.min.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,719 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/marked.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,744 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 173.2589ms 200 application/javascript
+INFO  2018-04-30 21:47:31,747 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 80.0885ms 200 application/javascript
+INFO  2018-04-30 21:47:31,796 [5    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/logo_small.png'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,820 [14   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/swagger-oauth.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,866 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 267.333ms 200 application/javascript
+INFO  2018-04-30 21:47:31,911 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 155.4537ms 200 image/png
+INFO  2018-04-30 21:47:31,919 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 382.9319ms 200 application/javascript
+INFO  2018-04-30 21:47:31,929 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-30 21:47:31,955 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/lib/highlight.9.1.0.pack.js'. Physical path: 'N/A'
+INFO  2018-04-30 21:47:31,981 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.6233ms 200 application/javascript
+INFO  2018-04-30 21:47:32,002 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-30 21:47:32,214 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 213.2606ms 200 application/json
+INFO  2018-04-30 21:47:32,637 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1525096052587  
+INFO  2018-04-30 21:47:32,639 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1525096052588  
+INFO  2018-04-30 21:47:32,684 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-30 21:47:32,687 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-30 21:47:32,738 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.5382ms 200 application/javascript
+INFO  2018-04-30 21:47:32,761 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 98.534ms 200 application/javascript
+DEBUG 2018-04-30 21:54:23,070 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-30 21:54:23,138 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-04-30 21:54:23,172 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.Web.Host.Startup.ShundaoWebHostModule, Shundao.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoWebCoreModule, Shundao.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoApplicationModule, Shundao.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoCoreModule, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,175 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,176 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,177 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,178 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.EntityFrameworkCore.ShundaoEntityFrameworkModule, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,179 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,180 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WxOpenApi.WxOpenApiModule, WxOpenApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:23,183 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-04-30 21:54:23,273 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:54:23,273 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:54:23,273 [1    ] o.Configuration.LanguageManagementConfig - Converted Shundao (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:54:23,273 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 21:54:23,673 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Shundao.EntityFrameworkCore.ShundaoDbContext, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 21:54:24,555 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-30 21:54:24,624 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-30 21:54:24,668 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-30 21:54:24,703 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Shundao
+DEBUG 2018-04-30 21:54:24,732 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-30 21:54:24,897 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-30 21:54:24,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-30 21:54:24,946 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-30 21:54:24,950 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.CreateUserDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.UserDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.PermissionDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.RoleDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-30 21:54:24,951 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.TenantDto
+INFO  2018-04-30 21:54:27,644 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-30 21:54:31,199 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-30 21:54:31,334 [6    ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-30 21:54:31,365 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) in 969.7226ms
+INFO  2018-04-30 21:54:31,399 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3803.7494ms 302 
+INFO  2018-04-30 21:54:31,434 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2018-04-30 21:54:31,447 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.1856ms 301 
+INFO  2018-04-30 21:54:31,476 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-30 21:54:31,516 [6    ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-30 21:54:31,548 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 72.8502ms 200 text/html
+INFO  2018-04-30 21:54:31,685 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-30 21:54:31,708 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-30 21:54:31,711 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-30 21:54:31,714 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-30 21:54:31,781 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2018-04-30 21:54:31,782 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+INFO  2018-04-30 21:54:31,809 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2018-04-30 21:54:31,811 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-30 21:54:31,885 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+INFO  2018-04-30 21:54:31,886 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2018-04-30 21:54:31,912 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-30 21:54:31,914 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 258.6402ms 304 application/javascript
+INFO  2018-04-30 21:54:31,963 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+INFO  2018-04-30 21:54:31,964 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 312.4232ms 304 application/javascript
+INFO  2018-04-30 21:54:32,002 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 389.0957ms 304 text/css
+INFO  2018-04-30 21:54:32,024 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 334.7081ms 304 text/css
+INFO  2018-04-30 21:54:32,054 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-30 21:54:32,080 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 233.4047ms 304 text/css
+INFO  2018-04-30 21:54:32,108 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-30 21:54:32,112 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-30 21:54:32,159 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-30 21:54:32,162 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2018-04-30 21:54:32,211 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 132.8497ms 304 application/javascript
+INFO  2018-04-30 21:54:32,237 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2018-04-30 21:54:32,239 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2018-04-30 21:54:32,269 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 231.7785ms 304 text/css
+INFO  2018-04-30 21:54:32,270 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 130.6851ms 304 application/javascript
+INFO  2018-04-30 21:54:32,295 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-30 21:54:32,298 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 157.7255ms 304 application/javascript
+INFO  2018-04-30 21:54:32,325 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-30 21:54:32,415 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+INFO  2018-04-30 21:54:32,443 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-30 21:54:32,447 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-30 21:54:32,492 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2018-04-30 21:54:32,525 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+INFO  2018-04-30 21:54:32,555 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2018-04-30 21:54:32,556 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.0183ms 304 application/javascript
+INFO  2018-04-30 21:54:32,584 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 140.9101ms 304 application/javascript
+INFO  2018-04-30 21:54:32,608 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 116.317ms 304 application/javascript
+INFO  2018-04-30 21:54:32,610 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-30 21:54:32,638 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-30 21:54:32,665 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2018-04-30 21:54:32,689 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-30 21:54:32,696 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 750.1464ms 304 application/javascript
+INFO  2018-04-30 21:54:32,717 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-30 21:54:32,743 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2018-04-30 21:54:32,766 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 465.2953ms 304 application/javascript
+INFO  2018-04-30 21:54:32,812 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2018-04-30 21:54:32,814 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 132.2818ms 304 application/javascript
+INFO  2018-04-30 21:54:32,843 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 231.4531ms 304 application/javascript
+INFO  2018-04-30 21:54:32,848 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2018-04-30 21:54:32,895 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 523.8754ms 304 application/javascript
+INFO  2018-04-30 21:54:32,924 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+INFO  2018-04-30 21:54:32,930 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 286.7644ms 304 image/png
+INFO  2018-04-30 21:54:32,938 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-30 21:54:32,964 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2018-04-30 21:54:33,011 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 66.4616ms 304 application/javascript
+INFO  2018-04-30 21:54:33,034 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-30 21:54:33,231 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 238.0256ms 200 application/json
+INFO  2018-04-30 21:54:33,627 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1525096473579  
+INFO  2018-04-30 21:54:33,630 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1525096473579  
+INFO  2018-04-30 21:54:33,680 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-30 21:54:33,683 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-30 21:54:33,737 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 106.6256ms 200 application/javascript
+INFO  2018-04-30 21:54:33,739 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 106.6268ms 200 application/javascript
+INFO  2018-04-30 21:54:45,990 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/throbber.gif  
+INFO  2018-04-30 21:54:45,999 [10   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/images/throbber.gif'. Physical path: 'N/A'
+INFO  2018-04-30 21:54:46,006 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 15.9182ms 200 image/gif
+INFO  2018-04-30 21:55:20,225 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/AreaService/Get?id=1  
+ERROR 2018-04-30 21:55:20,258 [15   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:55:20,618 [15   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:55:20,651 [15   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Get (Shundao.Application) in 378.7338ms
+INFO  2018-04-30 21:55:20,674 [15   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 449.6168ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:55:31,109 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/AreaService/GetList  
+ERROR 2018-04-30 21:55:31,116 [12   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:55:31,152 [12   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:55:31,177 [12   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.GetList (Shundao.Application) in 37.3684ms
+INFO  2018-04-30 21:55:31,201 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 92.6652ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:55:50,009 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/AreaService/GetList  
+ERROR 2018-04-30 21:55:50,015 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:55:50,045 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:55:50,070 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.GetList (Shundao.Application) in 31.2836ms
+INFO  2018-04-30 21:55:50,094 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.53ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:55:50,979 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/api/services/app/AreaService/GetList  
+ERROR 2018-04-30 21:55:50,984 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:55:51,016 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:55:51,041 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.GetList (Shundao.Application) in 33.3292ms
+INFO  2018-04-30 21:55:51,065 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 85.6102ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:57:17,618 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 21:57:17,646 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:17,671 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 21:57:17,701 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:17,726 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 21:57:17,727 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:57:17,758 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:57:17,763 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 81.9123ms
+INFO  2018-04-30 21:57:17,768 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 168.4441ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:57:34,889 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 21:57:34,913 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:34,937 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 21:57:34,967 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:34,993 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 21:57:34,994 [10   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:57:35,025 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:57:35,029 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 82.1737ms
+INFO  2018-04-30 21:57:35,053 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 163.0772ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:57:35,916 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 21:57:35,941 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:35,965 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 21:57:35,993 [6    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:57:36,019 [6    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 21:57:36,020 [6    ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:57:36,053 [6    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:57:36,057 [6    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 84.3221ms
+INFO  2018-04-30 21:57:36,062 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 166.8853ms 500 application/json; charset=utf-8
+INFO  2018-04-30 21:58:32,423 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 21:58:32,447 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:58:32,472 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 21:58:32,500 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 21:58:32,524 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 21:58:32,526 [10   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 21:58:32,557 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 21:58:32,582 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 81.5274ms
+INFO  2018-04-30 21:58:32,607 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 184.9735ms 500 application/json; charset=utf-8
+INFO  2018-04-30 22:03:49,037 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 22:03:49,061 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 22:03:49,085 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 22:03:49,113 [5    ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 22:03:49,116 [5    ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 22:03:49,117 [5    ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 22:03:49,149 [5    ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 22:03:49,175 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 59.7969ms
+INFO  2018-04-30 22:03:49,198 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 162.2719ms 500 application/json; charset=utf-8
+DEBUG 2018-04-30 22:04:43,190 [1    ] Abp.Modules.AbpModuleManager             - Loading Abp modules...
+DEBUG 2018-04-30 22:04:43,253 [1    ] Abp.Modules.AbpModuleManager             - Found 16 ABP modules in total.
+DEBUG 2018-04-30 22:04:43,288 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.Web.Host.Startup.ShundaoWebHostModule, Shundao.Web.Host, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoWebCoreModule, Shundao.Web.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoApplicationModule, Shundao.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.ShundaoCoreModule, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,292 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCoreModule, Abp.ZeroCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.AbpZeroCommonModule, Abp.Zero.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AbpKernelModule, Abp, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,293 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AutoMapper.AbpAutoMapperModule, Abp.AutoMapper, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Shundao.EntityFrameworkCore.ShundaoEntityFrameworkModule, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Zero.EntityFrameworkCore.AbpZeroCoreEntityFrameworkCoreModule, Abp.ZeroCore.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFrameworkCore.AbpEntityFrameworkCoreModule, Abp.EntityFrameworkCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,294 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.EntityFramework.AbpEntityFrameworkCommonModule, Abp.EntityFramework.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.AbpAspNetCoreModule, Abp.AspNetCore, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.Web.AbpWebCommonModule, Abp.Web.Common, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: Abp.AspNetCore.SignalR.AbpAspNetCoreSignalRModule, Abp.AspNetCore.SignalR, Version=3.5.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,295 [1    ] Abp.Modules.AbpModuleManager             - Loaded module: WxOpenApi.WxOpenApiModule, WxOpenApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:43,298 [1    ] Abp.Modules.AbpModuleManager             - 16 modules loaded.
+DEBUG 2018-04-30 22:04:43,386 [1    ] o.Configuration.LanguageManagementConfig - Converted Abp (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 22:04:43,386 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpZero (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 22:04:43,386 [1    ] o.Configuration.LanguageManagementConfig - Converted Shundao (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 22:04:43,386 [1    ] o.Configuration.LanguageManagementConfig - Converted AbpWeb (Abp.Localization.Dictionaries.DictionaryBasedLocalizationSource) to MultiTenantLocalizationSource
+DEBUG 2018-04-30 22:04:43,778 [1    ] ameworkCore.AbpEntityFrameworkCoreModule - Registering DbContext: Shundao.EntityFrameworkCore.ShundaoDbContext, Shundao.EntityFrameworkCore, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+DEBUG 2018-04-30 22:04:44,638 [1    ] Abp.Localization.LocalizationManager     - Initializing 4 localization sources.
+DEBUG 2018-04-30 22:04:44,699 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Abp
+DEBUG 2018-04-30 22:04:44,741 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpZero
+DEBUG 2018-04-30 22:04:44,760 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: Shundao
+DEBUG 2018-04-30 22:04:44,788 [1    ] Abp.Localization.LocalizationManager     - Initialized localization source: AbpWeb
+DEBUG 2018-04-30 22:04:44,941 [1    ] Abp.BackgroundJobs.BackgroundJobManager  - Start background worker: Abp.BackgroundJobs.BackgroundJobManager
+DEBUG 2018-04-30 22:04:44,981 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Found 10 classes define auto mapping attributes
+DEBUG 2018-04-30 22:04:44,982 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Models.TokenAuth.ExternalLoginProviderInfoModel
+DEBUG 2018-04-30 22:04:44,984 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.CreateUserDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Users.Dto.UserDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.TenantLoginInfoDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Sessions.Dto.UserLoginInfoDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.CreateRoleDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.PermissionDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.Roles.Dto.RoleDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.CreateTenantDto
+DEBUG 2018-04-30 22:04:44,985 [1    ] Abp.AutoMapper.AbpAutoMapperModule       - Shundao.MultiTenancy.Dto.TenantDto
+INFO  2018-04-30 22:04:47,659 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/  
+INFO  2018-04-30 22:04:51,354 [5    ] ore.Mvc.Internal.ControllerActionInvoker - Executing action method Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) with arguments ((null)) - ModelState is Valid
+INFO  2018-04-30 22:04:51,495 [11   ] Core.Mvc.Internal.RedirectResultExecutor - Executing RedirectResult, redirecting to /swagger.
+INFO  2018-04-30 22:04:51,524 [11   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Web.Host.Controllers.HomeController.Index (Shundao.Web.Host) in 929.7473ms
+INFO  2018-04-30 22:04:51,558 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 3939.3301ms 302 
+INFO  2018-04-30 22:04:51,592 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger  
+INFO  2018-04-30 22:04:51,626 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.9614ms 301 
+INFO  2018-04-30 22:04:51,652 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/  
+INFO  2018-04-30 22:04:51,693 [11   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/index.html'. Physical path: 'N/A'
+INFO  2018-04-30 22:04:51,724 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 72.9376ms 200 text/html
+INFO  2018-04-30 22:04:51,839 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/reset.css  
+INFO  2018-04-30 22:04:51,843 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery-1.8.0.min.js  
+INFO  2018-04-30 22:04:51,845 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/typography.css  
+INFO  2018-04-30 22:04:51,870 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/object-assign-pollyfill.js  
+INFO  2018-04-30 22:04:51,914 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery-1.8.0.min.js was not modified
+INFO  2018-04-30 22:04:51,916 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/screen.css  
+INFO  2018-04-30 22:04:51,918 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/css/print.css  
+INFO  2018-04-30 22:04:51,967 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 123.0679ms 304 application/javascript
+INFO  2018-04-30 22:04:52,018 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/reset.css was not modified
+INFO  2018-04-30 22:04:52,047 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/object-assign-pollyfill.js was not modified
+INFO  2018-04-30 22:04:52,049 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/typography.css was not modified
+INFO  2018-04-30 22:04:52,073 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/screen.css was not modified
+INFO  2018-04-30 22:04:52,074 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 275.1341ms 304 application/javascript
+INFO  2018-04-30 22:04:52,124 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 293.7344ms 304 text/css
+INFO  2018-04-30 22:04:52,125 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.ba-bbq.min.js  
+INFO  2018-04-30 22:04:52,153 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.wiggle.min.js  
+INFO  2018-04-30 22:04:52,200 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.ba-bbq.min.js was not modified
+INFO  2018-04-30 22:04:52,202 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 299.5617ms 304 text/css
+INFO  2018-04-30 22:04:52,248 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /css/print.css was not modified
+INFO  2018-04-30 22:04:52,249 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jquery.slideto.min.js  
+INFO  2018-04-30 22:04:52,255 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 453.666ms 304 text/css
+INFO  2018-04-30 22:04:52,281 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.slideto.min.js was not modified
+INFO  2018-04-30 22:04:52,327 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/swagger-ui.min.js  
+INFO  2018-04-30 22:04:52,328 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 290.0491ms 304 application/javascript
+INFO  2018-04-30 22:04:52,330 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 347.722ms 304 text/css
+INFO  2018-04-30 22:04:52,378 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 101.9975ms 304 application/javascript
+INFO  2018-04-30 22:04:52,380 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jquery.wiggle.min.js was not modified
+INFO  2018-04-30 22:04:52,430 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /swagger-ui.min.js was not modified
+INFO  2018-04-30 22:04:52,483 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 150.7429ms 304 application/javascript
+INFO  2018-04-30 22:04:52,532 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/lodash.min.js  
+INFO  2018-04-30 22:04:52,534 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 254.3362ms 304 application/javascript
+INFO  2018-04-30 22:04:52,561 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack.js  
+INFO  2018-04-30 22:04:52,564 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/lodash.min.js was not modified
+INFO  2018-04-30 22:04:52,590 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 209.463ms 304 application/javascript
+INFO  2018-04-30 22:04:52,591 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/jsoneditor.min.js  
+INFO  2018-04-30 22:04:52,617 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/marked.js  
+INFO  2018-04-30 22:04:52,662 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/highlight.9.1.0.pack_extended.js  
+INFO  2018-04-30 22:04:52,686 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/backbone-min.js  
+INFO  2018-04-30 22:04:52,713 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/jsoneditor.min.js was not modified
+INFO  2018-04-30 22:04:52,739 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack.js was not modified
+INFO  2018-04-30 22:04:52,761 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/handlebars-4.0.5.js  
+INFO  2018-04-30 22:04:52,829 [5    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/highlight.9.1.0.pack_extended.js was not modified
+INFO  2018-04-30 22:04:52,830 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 408.0788ms 304 application/javascript
+INFO  2018-04-30 22:04:52,903 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 295.1607ms 304 application/javascript
+INFO  2018-04-30 22:04:52,905 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/logo_small.png  
+INFO  2018-04-30 22:04:52,911 [13   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/logo_small.png was not modified
+INFO  2018-04-30 22:04:52,915 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 32.6853ms 304 image/png
+INFO  2018-04-30 22:04:52,920 [11   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/handlebars-4.0.5.js was not modified
+INFO  2018-04-30 22:04:52,926 [11   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 457.9227ms 304 application/javascript
+INFO  2018-04-30 22:04:52,928 [6    ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/marked.js was not modified
+INFO  2018-04-30 22:04:52,958 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 337.3895ms 304 application/javascript
+INFO  2018-04-30 22:04:52,960 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/backbone-min.js was not modified
+INFO  2018-04-30 22:04:53,026 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 206.0782ms 304 application/javascript
+INFO  2018-04-30 22:04:53,049 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 579.15ms 304 application/javascript
+INFO  2018-04-30 22:04:53,098 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/lib/swagger-oauth.js  
+INFO  2018-04-30 22:04:53,121 [12   ] NetCore.StaticFiles.StaticFileMiddleware - The file /lib/swagger-oauth.js was not modified
+INFO  2018-04-30 22:04:53,167 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 49.0518ms 304 application/javascript
+INFO  2018-04-30 22:04:53,188 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/v1/swagger.json  
+INFO  2018-04-30 22:04:53,395 [5    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 246.4516ms 200 application/json
+INFO  2018-04-30 22:04:53,789 [12   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/on-complete.js?_=1525097093739  
+INFO  2018-04-30 22:04:53,791 [13   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/ui/abp.js?_=1525097093736  
+INFO  2018-04-30 22:04:53,856 [12   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/on-complete.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\on-complete.js'
+INFO  2018-04-30 22:04:53,858 [13   ] NetCore.StaticFiles.StaticFileMiddleware - Sending file. Request path: '/swagger/ui/abp.js'. Physical path: 'D:\github\Abp-aspnet-core\src\Shundao.Web.Host\wwwroot\swagger\ui\abp.js'
+INFO  2018-04-30 22:04:53,908 [6    ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.2636ms 200 application/javascript
+INFO  2018-04-30 22:04:53,911 [14   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 120.3249ms 200 application/javascript
+INFO  2018-04-30 22:04:55,415 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 GET http://localhost:21021/swagger/images/throbber.gif  
+INFO  2018-04-30 22:04:55,440 [10   ] NetCore.StaticFiles.StaticFileMiddleware - The file /images/throbber.gif was not modified
+INFO  2018-04-30 22:04:55,464 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 30.0934ms 304 image/gif
+INFO  2018-04-30 22:04:56,620 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request starting HTTP/1.1 POST http://localhost:21021/api/services/app/AreaService/Test1  0
+INFO  2018-04-30 22:04:56,648 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 22:04:56,671 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+INFO  2018-04-30 22:04:56,704 [10   ] pNetCore.Cors.Infrastructure.CorsService - Policy execution failed.
+INFO  2018-04-30 22:04:56,728 [10   ] pNetCore.Cors.Infrastructure.CorsService - Request origin http://localhost:21021 does not have permission to access the resource.
+ERROR 2018-04-30 22:04:56,734 [10   ] Mvc.ExceptionHandling.AbpExceptionFilter - Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+Castle.MicroKernel.Handlers.HandlerException: Can't create component 'Shundao.Areas.AreaService' as it has dependencies to be satisfied.
+
+'Shundao.Areas.AreaService' is waiting for the following dependencies:
+- Service 'Abp.Domain.Repositories.IRepository`2[[Shundao.Areas.Area, Shundao.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+- Service 'Abp.Domain.Repositories.IRepository`2[[AbpTree.ITreeEntity, AbpTree, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null],[System.Guid, System.Private.CoreLib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]' which was not registered.
+
+   at Castle.MicroKernel.Handlers.DefaultHandler.AssertNotWaitingForDependency()
+   at Castle.MicroKernel.Handlers.DefaultHandler.ResolveCore(CreationContext context, Boolean requiresDecommission, Boolean instanceRequired, Burden& burden)
+   at Castle.MicroKernel.Handlers.DefaultHandler.Resolve(CreationContext context, Boolean instanceRequired)
+   at Castle.MicroKernel.DefaultKernel.ResolveComponent(IHandler handler, Type service, IDictionary additionalArguments, IReleasePolicy policy)
+   at Castle.MicroKernel.DefaultKernel.Castle.MicroKernel.IKernelInternal.Resolve(Type service, IDictionary arguments, IReleasePolicy policy)
+   at Castle.Windsor.MsDependencyInjection.ScopedWindsorServiceProvider.GetServiceInternal(Type serviceType, Boolean isOptional) in D:\Github\castle-windsor-ms-adapter\src\Castle.Windsor.MsDependencyInjection\ScopedWindsorServiceProvider.cs:line 55
+   at Microsoft.AspNetCore.Mvc.Controllers.ServiceBasedControllerActivator.Create(ControllerContext actionContext)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerFactoryProvider.<>c__DisplayClass5_0.<CreateControllerFactory>g__CreateController|0(ControllerContext controllerContext)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Internal.ControllerActionInvoker.<InvokeInnerFilterAsync>d__14.MoveNext()
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.ExceptionServices.ExceptionDispatchInfo.Throw()
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at Microsoft.AspNetCore.Mvc.Internal.ResourceInvoker.<InvokeNextExceptionFilterAsync>d__23.MoveNext()
+INFO  2018-04-30 22:04:57,052 [10   ] etCore.Mvc.Internal.ObjectResultExecutor - Executing ObjectResult, writing value Microsoft.AspNetCore.Mvc.ControllerContext.
+INFO  2018-04-30 22:04:57,085 [10   ] ore.Mvc.Internal.ControllerActionInvoker - Executed action Shundao.Areas.AreaService.Test1 (Shundao.Application) in 381.2661ms
+INFO  2018-04-30 22:04:57,090 [10   ] soft.AspNetCore.Hosting.Internal.WebHost - Request finished in 489.9864ms 500 application/json; charset=utf-8

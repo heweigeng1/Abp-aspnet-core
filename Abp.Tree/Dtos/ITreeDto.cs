@@ -4,8 +4,8 @@ using System.Text;
 
 namespace AbpTree.Dtos
 {
-    interface ITreeDto<TPrimaryKey> : ITreeEntity<TPrimaryKey>
+    interface ITreeDto : ITreeEntity
     {
-        List<ITreeDto<TPrimaryKey>> Child { get; set; }
+        List<ITreeDto> Child { get; set; }
     }
 }
