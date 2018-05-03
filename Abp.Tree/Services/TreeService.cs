@@ -8,26 +8,26 @@ using System.Linq;
 
 namespace AbpTree.Services
 {
-    public class TreeService : ApplicationService, ITreeService
+    public class TreeService : ApplicationService
     {
-        private readonly IRepository<ITreeEntity,Guid> treeRepository;
+        private readonly IRepository<AbpTreeEntity,Guid> treeRepository;
         private readonly ICacheManager cacheManager;
-        public TreeService(IRepository<ITreeEntity,Guid> _treerepository, ICacheManager _cacheManager)
+        public TreeService(IRepository<AbpTreeEntity, Guid> _treerepository, ICacheManager _cacheManager)
         {
             treeRepository = _treerepository;
             cacheManager = _cacheManager;
         }
-        public ITreeEntity Get(Guid id)
+        public AbpTreeEntity Get(Guid id)
         {
             return treeRepository.FirstOrDefault(id);
         }
-        public List<ITreeEntity> GetList()
+        public List<AbpTreeEntity> GetList()
         {
             var cache = cacheManager.GetCache("AbpTreeCache");
             return cache.Get("allTreeItem", () => { return treeRepository.GetAllList(); });
         }
 
-        public ITreeEntity InitTree()
+        public AbpTreeEntity InitTree()
         {
             throw new NotImplementedException();
         }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AbpTree.Dtos
 {
-    interface ITreeDto : ITreeEntity
+    interface ITreeDto 
     {
         List<ITreeDto> Child { get; set; }
     }

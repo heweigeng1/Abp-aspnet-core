@@ -5,21 +5,21 @@ using System.Text;
 
 namespace AbpTree
 {
-    public interface ITreeEntity : IEntity<Guid>
+    public class AbpTreeEntity : Entity<Guid>
     {
-        Guid? ParentId { get; set; }
-        string NodeName { get; set; }
+        public Guid? ParentId { get; set; }
+        public string NodeName { get; set; }
         /// <summary>
         /// 路径
         /// </summary>
-        string Path { get; set; }
+        public string Path { get; set; }
         /// <summary>
         /// 深度
         /// </summary>
-        int Depth { get; set; }
+        public int Depth { get; set; }
         /// <summary>
         /// 排序
         /// </summary>
-        int Sorted { get; set; }
+        public int Sorted { get; set; }
     }
 }
