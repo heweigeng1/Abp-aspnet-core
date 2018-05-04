@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Shundao.Areas
 {
-    public class Area : AbpTree.AbpTreeEntity
+    public class Area : AbpTreeEntity
     {
         public string Code { get; set; }
     }

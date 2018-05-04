@@ -1,10 +1,14 @@
 ﻿using Abp.AspNetCore.Configuration;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Threading.BackgroundWorkers;
+using Abp.Zero;
+using AbpTree.Services;
 using System.Reflection;
 
 namespace AbpTree
 {
+    [DependsOn(typeof(AbpZeroCoreModule))]
     public class AbpTreeModlue : AbpModule
     {
         /// <summary>
@@ -13,7 +17,7 @@ namespace AbpTree
         public override void PreInitialize()
         {
             //Configuration.Authorization.Providers.Add<ShundaoAuthorizationProvider>();
-            Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(AbpTreeModlue).Assembly, moduleName: "app", useConventionalHttpVerbs: true);
+            //Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(AbpTreeModlue).Assembly, moduleName: "app", useConventionalHttpVerbs: true);
             base.PreInitialize();
         }
 
@@ -24,9 +28,9 @@ namespace AbpTree
         {
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
+            //var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
 
-            IocManager.RegisterAssemblyByConvention(thisAssembly);
+            //IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
 
         /// <summary>

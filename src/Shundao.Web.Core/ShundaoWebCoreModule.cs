@@ -11,6 +11,7 @@ using Abp.Zero.Configuration;
 using Shundao.Authentication.JwtBearer;
 using Shundao.Configuration;
 using Shundao.EntityFrameworkCore;
+using AbpTree;
 
 #if FEATURE_SIGNALR
 using Abp.Web.SignalR;
@@ -27,7 +28,7 @@ namespace Shundao
 #if FEATURE_SIGNALR 
         ,typeof(AbpWebSignalRModule)
 #elif FEATURE_SIGNALR_ASPNETCORE
-        ,typeof(AbpAspNetCoreSignalRModule)
+        , typeof(AbpAspNetCoreSignalRModule)
 #endif
      )]
     public class ShundaoWebCoreModule : AbpModule

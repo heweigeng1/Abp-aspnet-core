@@ -1,13 +1,16 @@
 ﻿using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
+using AbpTree;
 using Shundao.Authorization;
 
 namespace Shundao
 {
     [DependsOn(
         typeof(ShundaoCoreModule), 
-        typeof(AbpAutoMapperModule))]
+        typeof(AbpAutoMapperModule),
+        typeof(AbpTreeModlue)
+        )]
     public class ShundaoApplicationModule : AbpModule
     {
         public override void PreInitialize()
