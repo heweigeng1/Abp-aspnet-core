@@ -6,7 +6,7 @@ using System.Text;
 
 namespace Shundao.Areas
 {
-    public interface IAreaService:ITransientDependency
+    public interface IAreaAppService:ITransientDependency
     {
         void Test1();
     }

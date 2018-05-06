@@ -9,13 +9,13 @@ using AbpTree.Services;
 
 namespace Shundao.Areas
 {
-    public class AreaService : ApplicationService, IAreaService
+    public class AreaAppService : ApplicationService, IAreaAppService
     {
-        private readonly IRepository<Area, Guid> _areaRepository;
+        private readonly IRepository<Area,Guid> _areaRepository;
         private readonly AreaManager  _areaManager;
         //private readonly IRepository<ITreeEntity, Guid> treeRepository;
         //private readonly ICacheManager cacheManager;
-        public AreaService(IRepository<Area, Guid> areaRepository, ICacheManager cacheManager,AreaManager areaManager) 
+        public AreaAppService(IRepository<Area,Guid> areaRepository, ICacheManager cacheManager,AreaManager areaManager) 
         {
             _areaRepository = areaRepository;
             _areaManager = areaManager;
