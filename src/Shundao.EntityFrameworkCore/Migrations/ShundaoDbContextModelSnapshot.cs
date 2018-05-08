@@ -839,11 +839,13 @@ namespace Shundao.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Code");
+
                     b.Property<int>("Depth");
 
                     b.Property<string>("NodeName");
 
-                    b.Property<Guid>("ParentId");
+                    b.Property<Guid?>("ParentId");
 
                     b.Property<string>("Path");
 

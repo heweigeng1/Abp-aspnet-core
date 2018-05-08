@@ -8,9 +8,9 @@ using System;
 
 namespace Shundao.Areas
 {
-    public class AreaManager : TreeManager<Area>, IDomainService, ISingletonDependency
+    public class AreaManager : TreeManager<Area>, IDomainService
     {
-       public  IRepository<Area, Guid> _repository {protected get; set; }
+       public IRepository<Area, Guid> _repository {protected get; set; }
         public AreaManager(IRepository<Area, Guid> repository,AbpTimer timer, ICacheManager cacheManager) : base(repository, cacheManager)
         {
             repository = _repository;

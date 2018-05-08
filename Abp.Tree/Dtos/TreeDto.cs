@@ -1,11 +1,11 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Application.Services.Dto;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AbpTree
+namespace AbpTree.Dtos
 {
-    public class AbpTreeEntity<T> : Entity<Guid>
+    public class TreeDto : EntityDto<Guid>
     {
         public Guid? ParentId { get; set; }
         public string NodeName { get; set; }
@@ -21,6 +21,6 @@ namespace AbpTree
         /// 排序
         /// </summary>
         public int Sorted { get; set; }
-        public virtual ICollection<T> Child { get; set; }
+        public List<TreeDto> Child { get; set; }
     }
 }

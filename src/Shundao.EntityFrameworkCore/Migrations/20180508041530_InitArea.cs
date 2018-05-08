@@ -4,7 +4,7 @@ using System.Collections.Generic;
 
 namespace Shundao.Migrations
 {
-    public partial class AddAreasTree : Migration
+    public partial class InitArea : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -13,8 +13,12 @@ namespace Shundao.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(nullable: false),
+                    Code = table.Column<string>(nullable: true),
+                    Depth = table.Column<int>(nullable: false),
                     NodeName = table.Column<string>(nullable: true),
-                    ParentId = table.Column<Guid>(nullable: false)
+                    ParentId = table.Column<Guid>(nullable: true),
+                    Path = table.Column<string>(nullable: true),
+                    Sorted = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

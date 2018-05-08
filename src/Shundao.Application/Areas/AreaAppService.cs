@@ -11,11 +11,11 @@ namespace Shundao.Areas
 {
     public class AreaAppService : ApplicationService, IAreaAppService
     {
-        private readonly IRepository<Area,Guid> _areaRepository;
+        private readonly IRepository<Area, Guid> _areaRepository;
         private readonly AreaManager  _areaManager;
         //private readonly IRepository<ITreeEntity, Guid> treeRepository;
         //private readonly ICacheManager cacheManager;
-        public AreaAppService(IRepository<Area,Guid> areaRepository, ICacheManager cacheManager,AreaManager areaManager) 
+        public AreaAppService(IRepository<Area, Guid> areaRepository, ICacheManager cacheManager,AreaManager areaManager) 
         {
             _areaRepository = areaRepository;
             _areaManager = areaManager;
@@ -29,6 +29,10 @@ namespace Shundao.Areas
                 NodeName = "顶顶顶",
                 
             });
+        }
+        public int Test2()
+        {
+          return  _areaManager.GetAllListCache().Count;
         }
     }
 }

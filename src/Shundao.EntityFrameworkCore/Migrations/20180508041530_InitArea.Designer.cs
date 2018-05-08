@@ -16,8 +16,8 @@ using System;
 namespace Shundao.Migrations
 {
     [DbContext(typeof(ShundaoDbContext))]
-    [Migration("20180430054929_UpdateTree")]
-    partial class UpdateTree
+    [Migration("20180508041530_InitArea")]
+    partial class InitArea
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -840,11 +840,13 @@ namespace Shundao.Migrations
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
 
+                    b.Property<string>("Code");
+
                     b.Property<int>("Depth");
 
                     b.Property<string>("NodeName");
 
-                    b.Property<Guid>("ParentId");
+                    b.Property<Guid?>("ParentId");
 
                     b.Property<string>("Path");
 

@@ -28,9 +28,9 @@ namespace AbpTree
         {
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            //var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
+            var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
 
-            //IocManager.RegisterAssemblyByConvention(thisAssembly);
+            IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
 
         /// <summary>
