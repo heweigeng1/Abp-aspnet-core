@@ -5,7 +5,7 @@ using System.Text;
 
 namespace AbpTree.Dtos
 {
-    public class TreeDto : EntityDto<Guid>
+    public class AbpTreeDto<T> : EntityDto<Guid>
     {
         public Guid? ParentId { get; set; }
         public string NodeName { get; set; }
@@ -21,6 +21,6 @@ namespace AbpTree.Dtos
         /// 排序
         /// </summary>
         public int Sorted { get; set; }
-        public List<TreeDto> Child { get; set; }
+        public List<T> Child { get; set; }
     }
 }

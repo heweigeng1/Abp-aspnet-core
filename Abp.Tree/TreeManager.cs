@@ -8,7 +8,7 @@ using System.Linq;
 
 namespace AbpTree
 {
-    public class TreeManager<TreeEntity> : IDomainService where TreeEntity : AbpTreeEntity<TreeEntity>
+    public class TreeManager<TreeEntity, TreeDto> : IDomainService where TreeEntity : AbpTreeEntity<TreeEntity> where TreeDto : AbpTreeDto<TreeDto>
     {
         private readonly ICacheManager _cacheManager;
         private readonly IRepository<TreeEntity, Guid> _repository;
@@ -23,22 +23,10 @@ namespace AbpTree
             var cache = _cacheManager.GetCache("AbpTreeCache");
             return cache.Get("allTreeItem", () => { return _repository.GetAllList(); });
         }
-        public TreeDto InitTree(List<TreeDto> list)
+        public TreeDto InitTree(List<TreeDto> list, TreeDto dto)
         {
-            int minDepth = list.Min(c => c.Depth);
-            var array = list.Where(c => c.Depth == minDepth).OrderBy(c=>c.Sorted).ToList();
-            var root = new TreeDto
-            {
-                Depth = -1,
-                NodeName = "root",
-                Child = array
-            };
-            foreach (var item in root.Child)
-            {
-                item.Child = list.Where(c => c.ParentId == item.Id).ToList();
-            }
-            
-            return root;
+            RecursionToChild(list, dto);
+            return dto;
         }
         public void BrotherNode()
         {
@@ -47,6 +35,15 @@ namespace AbpTree
         public void LevelNode()
         {
 
+        }
+        private void RecursionToChild(List<TreeDto> list, TreeDto entity)
+        {
+            var data = list.Where(c => c.ParentId == entity.Id).ToList();
+            entity.Child.AddRange(data);
+            foreach (var item in data)
+            {
+                RecursionToChild(list, item);
+            }
         }
     }
 }
