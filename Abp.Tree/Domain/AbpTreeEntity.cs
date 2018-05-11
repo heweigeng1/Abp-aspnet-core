@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AbpTree
+namespace AbpTree.Domain
 {
     public class AbpTreeEntity<T> : Entity<Guid>
     {
@@ -21,6 +21,6 @@ namespace AbpTree
         /// 排序
         /// </summary>
         public int Sorted { get; set; }
-        public virtual ICollection<T> Child { get; set; }
+        public virtual IList<T> Child { get; set; }
     }
 }

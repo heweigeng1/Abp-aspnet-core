@@ -1,6 +1,8 @@
-﻿using Abp.Domain.Entities;
+﻿using Abp.Dependency;
+using Abp.Domain.Entities;
 using Abp.EntityFrameworkCore;
 using Abp.EntityFrameworkCore.Repositories;
+using System.Collections.Generic;
 
 namespace Shundao.EntityFrameworkCore.Repositories
 {
@@ -16,8 +18,6 @@ namespace Shundao.EntityFrameworkCore.Repositories
             : base(dbContextProvider)
         {
         }
-
-        // Add your common methods for all repositories
     }
 
     /// <summary>

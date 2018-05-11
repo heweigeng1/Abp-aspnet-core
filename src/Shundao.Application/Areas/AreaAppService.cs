@@ -5,34 +5,46 @@ using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Caching;
 using AbpTree;
-using AbpTree.Services;
+using AbpTree.Domain;
+using AutoMapper;
+using Shundao.Areas.Dto;
+using Shundao.EntityFrameworkCore.Repositories;
 
 namespace Shundao.Areas
 {
     public class AreaAppService : ApplicationService, IAreaAppService
     {
-        private readonly IRepository<Area, Guid> _areaRepository;
-        private readonly AreaManager  _areaManager;
-        //private readonly IRepository<ITreeEntity, Guid> treeRepository;
-        //private readonly ICacheManager cacheManager;
-        public AreaAppService(IRepository<Area, Guid> areaRepository, ICacheManager cacheManager,AreaManager areaManager) 
+        //private readonly IRepository<Area, Guid> _areaRepository;
+        private readonly ShundaoRepositoryBase<Area, Guid> _areaRepository;
+        private readonly TreeManager<Area, AreaDto> _treeManager;
+        public AreaAppService(TreeManager<Area, AreaDto> treeManager)
         {
-            _areaRepository = areaRepository;
-            _areaManager = areaManager;
+            //_areaRepository = areaRepository;
+            _treeManager = treeManager;
         }
         public void Test1()
         {
-            _areaRepository.Insert(new Area
+          
+            var entity = new Area
             {
                 Id = Guid.NewGuid(),
-                Code = "527200",
-                NodeName = "顶顶顶",
-                
+                Code = "010",
+                NodeName = "中国",
+            };
+            List<Area> list = new List<Area>();
+            list.Add(entity);
+            list.Add(new Area {
+                Code="100000",
+                NodeName="北京",
+                ParentId=entity.Id
             });
+            _areaRepository.Context.AddRange(list);
         }
-        public int Test2()
+        public AreaDto GetAreaMap()
         {
-          return  _areaManager.GetAllListCache().Count;
+            var list = ObjectMapper.Map<List<AreaDto>>(_treeManager.GetAllListCache());
+            var dto = list.Find(c => c.NodeName == "中国");
+            return _treeManager.InitTree(list, dto);
         }
     }
 }

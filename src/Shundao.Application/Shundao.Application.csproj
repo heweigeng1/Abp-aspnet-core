@@ -16,5 +16,6 @@
   <ItemGroup>
     <ProjectReference Include="..\..\WxOpenApi\WxOpenApi.csproj" />
     <ProjectReference Include="..\Shundao.Core\Shundao.Core.csproj" />
+    <ProjectReference Include="..\Shundao.EntityFrameworkCore\Shundao.EntityFrameworkCore.csproj" />
   </ItemGroup>
 </Project>

@@ -1,7 +1,10 @@
 ﻿using Abp.AutoMapper;
+using Abp.Dependency;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using AbpTree;
+using Shundao.Areas;
+using Shundao.Areas.Dto;
 using Shundao.Authorization;
 
 namespace Shundao
@@ -23,7 +26,7 @@ namespace Shundao
             var thisAssembly = typeof(ShundaoApplicationModule).GetAssembly();
 
             IocManager.RegisterAssemblyByConvention(thisAssembly);
-
+            
             Configuration.Modules.AbpAutoMapper().Configurators.Add(
                 // Scan the assembly for classes which inherit from AutoMapper.Profile
                 cfg => cfg.AddProfiles(thisAssembly)

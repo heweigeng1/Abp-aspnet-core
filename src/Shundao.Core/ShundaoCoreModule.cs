@@ -42,7 +42,6 @@ namespace Shundao
         public override void Initialize()
         {
             IocManager.RegisterAssemblyByConvention(typeof(ShundaoCoreModule).GetAssembly());
-           
         }
 
         public override void PostInitialize()

@@ -1,14 +1,16 @@
-﻿using Abp.Domain.Repositories;
+﻿using Abp.Dependency;
+using Abp.Domain.Repositories;
 using Abp.Domain.Services;
 using Abp.Runtime.Caching;
 using AbpTree.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 
-namespace AbpTree
+namespace AbpTree.Domain
 {
-    public class TreeManager<TreeEntity, TreeDto> : IDomainService where TreeEntity : AbpTreeEntity<TreeEntity> where TreeDto : AbpTreeDto<TreeDto>
+    public class TreeManager<TreeEntity, TreeDto> :  ISingletonDependency where TreeEntity : AbpTreeEntity<TreeEntity> where TreeDto : AbpTreeDto<TreeDto>
     {
         private readonly ICacheManager _cacheManager;
         private readonly IRepository<TreeEntity, Guid> _repository;

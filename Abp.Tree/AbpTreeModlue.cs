@@ -3,7 +3,7 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Threading.BackgroundWorkers;
 using Abp.Zero;
-using AbpTree.Services;
+using AbpTree.Domain;
 using System.Reflection;
 
 namespace AbpTree
@@ -29,7 +29,6 @@ namespace AbpTree
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
             var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
-
             IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
 

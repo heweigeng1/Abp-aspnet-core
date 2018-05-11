@@ -1,11 +1,14 @@
 ﻿using Abp.Application.Services.Dto;
+using Abp.AutoMapper;
+using AbpTree.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Shundao.Areas.Dto
 {
-    public class AreaDto : EntityDto<Guid>
+    [AutoMapFrom(typeof(Area))]
+    public class AreaDto : AbpTreeDto<AreaDto>
     {
         public string Code { get; set; }
     }
