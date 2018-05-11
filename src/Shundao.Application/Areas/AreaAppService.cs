@@ -14,13 +14,13 @@ namespace Shundao.Areas
 {
     public class AreaAppService : ApplicationService, IAreaAppService
     {
-        //private readonly IRepository<Area, Guid> _areaRepository;
-        private readonly ShundaoRepositoryBase<Area, Guid> _areaRepository;
-        private readonly TreeManager<Area, AreaDto> _treeManager;
-        public AreaAppService(TreeManager<Area, AreaDto> treeManager)
+        private readonly IRepository<Area, Guid> _areaRepository;
+        //private readonly ShundaoRepositoryBase<Area, Guid> _areaRepository;
+        private readonly AreaManager _areaManager;
+        public AreaAppService(AreaManager areaManager, IRepository<Area, Guid> areaRepository)
         {
-            //_areaRepository = areaRepository;
-            _treeManager = treeManager;
+            _areaRepository = areaRepository;
+            _areaManager = areaManager;
         }
         public void Test1()
         {
@@ -38,13 +38,16 @@ namespace Shundao.Areas
                 NodeName="北京",
                 ParentId=entity.Id
             });
-            _areaRepository.Context.AddRange(list);
+            foreach (var item in list)
+            {
+                _areaRepository.Insert(item);
+            }
         }
         public AreaDto GetAreaMap()
         {
-            var list = ObjectMapper.Map<List<AreaDto>>(_treeManager.GetAllListCache());
-            var dto = list.Find(c => c.NodeName == "中国");
-            return _treeManager.InitTree(list, dto);
+            var list = _areaManager.GetAllListCache();
+            var area = list.Find(c => c.NodeName == "中国");
+            return ObjectMapper.Map<AreaDto>(area);
         }
     }
 }

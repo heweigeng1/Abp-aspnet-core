@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Shundao.Areas
 {
-    public interface IAreaRepository: IRepository<Area,Guid>
+    public interface IRepository: IRepository<Area,Guid>
     {
     }
 }
