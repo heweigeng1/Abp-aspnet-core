@@ -1,16 +1,14 @@
 ﻿using Abp.Dependency;
 using Abp.Domain.Repositories;
-using Abp.Domain.Services;
 using Abp.Runtime.Caching;
 using AbpTree.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace AbpTree.Domain
 {
-    public class TreeManager<TreeEntity, TreeDto> :  ISingletonDependency where TreeEntity : AbpTreeEntity<TreeEntity> where TreeDto : AbpTreeDto<TreeDto>
+    public class TreeManager<TreeEntity> :  ISingletonDependency where TreeEntity : AbpTreeEntity<TreeEntity> 
     {
         private readonly ICacheManager _cacheManager;
         private readonly IRepository<TreeEntity, Guid> _repository;
@@ -25,10 +23,10 @@ namespace AbpTree.Domain
             var cache = _cacheManager.GetCache("AbpTreeCache");
             return cache.Get("allTreeItem", () => { return _repository.GetAllList(); });
         }
-        public TreeDto InitTree(List<TreeDto> list, TreeDto dto)
+        public TreeEntity InitTree(List<TreeEntity> list, TreeEntity entity)
         {
-            RecursionToChild(list, dto);
-            return dto;
+            RecursionToChild(list, entity);
+            return entity;
         }
         public void BrotherNode()
         {
@@ -38,13 +36,17 @@ namespace AbpTree.Domain
         {
 
         }
-        private void RecursionToChild(List<TreeDto> list, TreeDto entity)
+        private void RecursionToChild(List<TreeEntity> list, TreeEntity entity)
         {
             var data = list.Where(c => c.ParentId == entity.Id).ToList();
-            entity.Child.AddRange(data);
-            foreach (var item in data)
+            entity.Child = new List<TreeEntity>();
+            if (data!=null)
             {
-                RecursionToChild(list, item);
+                entity.Child = data;
+                foreach (var item in data)
+                {
+                    RecursionToChild(list, item);
+                }
             }
         }
     }

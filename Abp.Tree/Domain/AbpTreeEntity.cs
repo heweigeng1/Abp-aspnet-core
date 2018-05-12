@@ -1,13 +1,13 @@
 ﻿using Abp.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace AbpTree.Domain
 {
     public class AbpTreeEntity<T> : Entity<Guid>
     {
-        public Guid? ParentId { get; set; }
         public string NodeName { get; set; }
         /// <summary>
         /// 路径
@@ -21,6 +21,8 @@ namespace AbpTree.Domain
         /// 排序
         /// </summary>
         public int Sorted { get; set; }
-        public virtual IList<T> Child { get; set; }
+        public virtual Guid? ParentId { get; set; }
+        [ForeignKey("ParentId")]
+        public virtual ICollection<T> Child { get; set; }
     }
 }

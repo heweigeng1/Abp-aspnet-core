@@ -1,11 +1,9 @@
-﻿using Abp.Dependency;
-using Abp.Modules;
+﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Timing;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using AbpTree;
-using Shundao.Areas;
 using Shundao.Authorization.Roles;
 using Shundao.Authorization.Users;
 using Shundao.Configuration;
