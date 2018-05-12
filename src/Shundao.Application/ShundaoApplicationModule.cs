@@ -1,10 +1,7 @@
 ﻿using Abp.AutoMapper;
-using Abp.Dependency;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using AbpTree;
-using Shundao.Areas;
-using Shundao.Areas.Dto;
 using Shundao.Authorization;
 
 namespace Shundao
