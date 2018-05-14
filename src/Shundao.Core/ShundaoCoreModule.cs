@@ -14,7 +14,7 @@ using Shundao.Timing;
 namespace Shundao
 {
     [DependsOn(typeof(AbpZeroCoreModule),
-         typeof(AbpTreeModlue))]
+         typeof(AbpTreeModule))]
     public class ShundaoCoreModule : AbpModule
     {
         public override void PreInitialize()

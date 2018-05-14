@@ -1,12 +1,15 @@
 ﻿using Abp.Modules;
 using Abp.Reflection.Extensions;
+using AbpTree;
 using System.Reflection;
 using WxOpenApi;
 
 namespace InitPlugIn
 {
     [DependsOn(
-        typeof(WxOpenApiModule))]
+        typeof(WxOpenApiModule),
+        typeof(AbpTreeModule)
+        )]
     public class InitPlugInModule : AbpModule
     {
         /// <summary>

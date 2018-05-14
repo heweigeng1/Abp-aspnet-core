@@ -16,7 +16,7 @@ namespace WxOpenApi
         public override void PreInitialize()
         {
             //Configuration.Authorization.Providers.Add<ShundaoAuthorizationProvider>();
-            Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(WxOpenApiModule).Assembly, moduleName:"app", useConventionalHttpVerbs: true);
+            //Configuration.Modules.AbpAspNetCore().CreateControllersForAppServices(typeof(WxOpenApiModule).Assembly, moduleName:"app", useConventionalHttpVerbs: true);
             base.PreInitialize();
         }
 

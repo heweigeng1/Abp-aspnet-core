@@ -4,23 +4,27 @@ using System.Text;
 using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Caching;
+using Abp.Web.Models;
 using AbpTree;
 using AbpTree.Domain;
 using AutoMapper;
 using Shundao.Areas.Dto;
 using Shundao.EntityFrameworkCore.Repositories;
+using WxOpenApi.AppPay;
 
 namespace Shundao.Areas
 {
     public class AreaAppService : ApplicationService, IAreaAppService
     {
         private readonly IRepository<Area, Guid> _areaRepository;
+        private readonly MobliePayAppService _mobliePayAppService;
         //private readonly ShundaoRepositoryBase<Area, Guid> _areaRepository;
         private readonly AreaManager _areaManager;
-        public AreaAppService(AreaManager areaManager, IRepository<Area, Guid> areaRepository)
+        public AreaAppService(AreaManager areaManager, IRepository<Area, Guid> areaRepository, MobliePayAppService mobliePayAppService)
         {
             _areaRepository = areaRepository;
             _areaManager = areaManager;
+            _mobliePayAppService = mobliePayAppService;
         }
         public void Test1()
         {
@@ -42,6 +46,11 @@ namespace Shundao.Areas
             {
                 _areaRepository.Insert(item);
             }
+        }
+        [DontWrapResult]
+        public void Test2()
+        {
+            _mobliePayAppService.Nodify();
         }
         public AreaDto GetAreaMap()
         {

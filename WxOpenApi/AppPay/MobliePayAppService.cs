@@ -8,10 +8,11 @@ using WxOpenApi.Config;
 using WxOpenApi.Utils;
 using Microsoft.AspNetCore.Http;
 using Abp.Web.Models;
+using Abp.Domain.Services;
 
 namespace WxOpenApi.AppPay
 {
-    public class MobliePayAppService : ApplicationService, IMobliePayAppService
+    public class MobliePayAppService : IDomainService, IMobliePayAppService
     {
         IHttpContextAccessor contextAccessor;
         public MobliePayAppService(IHttpContextAccessor _contextAccessor)
@@ -19,7 +20,7 @@ namespace WxOpenApi.AppPay
             contextAccessor = _contextAccessor;
         }
 
-        [DontWrapResult]
+
         public void Nodify()
         {
             using (MemoryStream ms = new MemoryStream())

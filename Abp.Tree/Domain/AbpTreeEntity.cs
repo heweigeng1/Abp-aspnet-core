@@ -1,13 +1,16 @@
 ﻿using Abp.Domain.Entities;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Text;
 
 namespace AbpTree.Domain
 {
     public class AbpTreeEntity<T> : Entity<Guid>
     {
+        public const int NodeNameMaxLength = 100;
+
+        [StringLength(NodeNameMaxLength)]
         public string NodeName { get; set; }
         /// <summary>
         /// 路径

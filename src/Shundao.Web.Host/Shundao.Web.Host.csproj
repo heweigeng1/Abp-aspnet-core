@@ -25,7 +25,6 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\InitPlugIn\InitPlugIn.csproj" />
     <ProjectReference Include="..\Shundao.Web.Core\Shundao.Web.Core.csproj" />
   </ItemGroup>
   <ItemGroup>

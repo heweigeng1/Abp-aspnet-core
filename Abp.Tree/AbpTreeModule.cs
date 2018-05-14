@@ -9,7 +9,7 @@ using System.Reflection;
 namespace AbpTree
 {
     [DependsOn(typeof(AbpZeroCoreModule))]
-    public class AbpTreeModlue : AbpModule
+    public class AbpTreeModule : AbpModule
     {
         /// <summary>
         /// 预初始化，通常是用来配置框架以及其它模块
@@ -28,7 +28,7 @@ namespace AbpTree
         {
             //把当前程序集的特定类或接口注册到依赖注入容器中
             IocManager.RegisterAssemblyByConvention(Assembly.GetExecutingAssembly());
-            var thisAssembly = typeof(AbpTreeModlue).GetAssembly();
+            var thisAssembly = typeof(AbpTreeModule).GetAssembly();
             IocManager.RegisterAssemblyByConvention(thisAssembly);
         }
 

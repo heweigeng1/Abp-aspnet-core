@@ -8,7 +8,7 @@ using WxOpenApi.AppPay.Dtos;
 
 namespace WxOpenApi.AppPay
 {
-    public interface IMobliePayAppService: IApplicationService
+    public interface IMobliePayAppService
     {
         [HttpPost]
         PayingOutput Paying();
