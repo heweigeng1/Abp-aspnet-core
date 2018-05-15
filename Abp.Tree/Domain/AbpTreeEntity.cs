@@ -8,7 +8,7 @@ namespace AbpTree.Domain
 {
     public class AbpTreeEntity<T> : Entity<Guid>
     {
-        public const int NodeNameMaxLength = 100;
+        public const int NodeNameMaxLength = 128;
 
         [StringLength(NodeNameMaxLength)]
         public string NodeName { get; set; }

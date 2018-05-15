@@ -1,16 +1,16 @@
-﻿using Abp.Application.Services.Dto;
+﻿using Abp.AutoMapper;
 using AbpTree.Domain;
+using AbpTree.Dtos;
 using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Text;
 
-namespace AbpTree.Dtos
+namespace Shundao.Areas.Dto
 {
-    public class AbpTreeDto<T> : EntityDto<Guid>
+    [AutoMapFrom(typeof(Area))]
+    public class CreateAreaDto 
     {
         public Guid? ParentId { get; set; }
-        [StringLength(AbpTreeEntity<T>.NodeNameMaxLength)]
+        [StringLength(AbpTreeEntity<Area>.NodeNameMaxLength)]
         public string NodeName { get; set; }
         /// <summary>
         /// 路径
@@ -24,6 +24,5 @@ namespace AbpTree.Dtos
         /// 排序
         /// </summary>
         public int Sorted { get; set; }
-        public List<T> Child { get; set; }
     }
 }
