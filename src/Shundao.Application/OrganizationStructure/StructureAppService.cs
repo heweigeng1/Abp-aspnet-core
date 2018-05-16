@@ -17,7 +17,7 @@ namespace Shundao.OrganizationStructure
             _repository = repository;
         }
 
-        public void Move()
+        public void MoveNode()
         {
             throw new NotImplementedException();
         }

@@ -9,6 +9,6 @@ namespace Shundao.OrganizationStructure
 {
     public interface IStructureAppService:IAsyncCrudAppService<StructureDto,Guid,PagedResultRequestDto,CreateStructureDto,StructureDto>
     {
-        void Move();
+        void MoveNode();
     }
 }
