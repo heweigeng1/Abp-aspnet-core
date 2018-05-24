@@ -1,18 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Abp.Application.Services;
-using Abp.Application.Services.Dto;
 using Abp.Domain.Repositories;
-using Abp.Runtime.Caching;
 using Abp.Web.Models;
-using AbpTree;
-using AbpTree.Domain;
-using AutoMapper;
 using Shundao.Areas.Dto;
-using Shundao.Common.Paged;
 using Shundao.Common.Paged.Services;
-using Shundao.EntityFrameworkCore.Repositories;
 using WxOpenApi.AppPay;
 
 namespace Shundao.Areas

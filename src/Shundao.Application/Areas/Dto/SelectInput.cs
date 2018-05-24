@@ -1,4 +1,5 @@
-﻿using Shundao.Common.Paged;
+﻿using Abp.Application.Services.Dto;
+using Shundao.Common.Paged;
 using Shundao.Common.Paged.Dto;
 using System;
 using System.Collections.Generic;
@@ -7,11 +8,8 @@ using System.Text;
 
 namespace Shundao.Areas.Dto
 {
-    public class SelectInput
+    public class SelectInput: PagedResultRequestDto
     {
-        [Display(Name = "selectText")]
         public string SelectText { get; set; }
-        [Display(Name = "pagination")]
-        public AntdProPagedDto Pagination { get; set; }
     }
 }
