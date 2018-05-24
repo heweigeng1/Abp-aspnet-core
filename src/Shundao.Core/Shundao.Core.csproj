@@ -24,5 +24,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\Abp.Tree\AbpTree.csproj" />
+    <ProjectReference Include="..\..\Shundao.Common\Shundao.Common.csproj" />
   </ItemGroup>
 </Project>
