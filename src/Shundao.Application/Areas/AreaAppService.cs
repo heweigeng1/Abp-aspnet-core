@@ -1,13 +1,13 @@
 ﻿using System;
+using Abp.Application.Services;
 using Abp.Domain.Repositories;
 using Abp.Web.Models;
 using Shundao.Areas.Dto;
-using Shundao.Common.Paged.Services;
 using WxOpenApi.AppPay;
 
 namespace Shundao.Areas
 {
-    public class AreaAppService : AsyncShundaoCrudAppService<Area,AreaDto,Guid, SelectInput, CreateAreaDto,AreaDto>, IAreaAppService
+    public class AreaAppService : AsyncCrudAppService<Area,AreaDto,Guid, SelectInput, CreateAreaDto,AreaDto>, IAreaAppService
     {
         private readonly IRepository<Area, Guid> _areaRepository;
         private readonly AreaManager _areaManager;
